@@ -1,0 +1,1 @@
+c:\users\anjali\documents\visual studio 2017\Projects\snoo-android\snoo-android\bin\Debug\Xamarin.UITest.dll

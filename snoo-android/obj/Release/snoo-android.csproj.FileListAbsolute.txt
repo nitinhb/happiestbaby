@@ -1,0 +1,9 @@
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Release\snoo-android.dll
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Release\snoo-android.pdb
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Release\nunit.framework.dll
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Release\Xamarin.UITest.dll
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Release\nunit.framework.xml
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Release\Xamarin.UITest.xml
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\obj\Release\snoo-android.dll
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\obj\Release\snoo-android.pdb
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\obj\Release\snoo-android.csprojResolveAssemblyReference.cache
