@@ -48,6 +48,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="Xamarin.UITest, Version=2.0.0.1555, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.UITest.2.0.0.1555-dev\lib\Xamarin.UITest.dll</HintPath>
     </Reference>
@@ -56,11 +57,16 @@
     <Compile Include="AboutSnoo.cs" />
     <Compile Include="HomePage.cs" />
     <Compile Include="Login.cs" />
+    <Compile Include="Logout.cs" />
+    <Compile Include="PasswordChange.cs" />
+    <Compile Include="Setting.cs" />
     <Compile Include="SetUpMySnoo.cs" />
     <Compile Include="SignUp.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="SplashScreen.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

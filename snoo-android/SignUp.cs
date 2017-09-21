@@ -5,7 +5,7 @@ using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 using Xamarin.UITest.Android;
-
+using System.Configuration;
 
 namespace snoo_android
 {
@@ -17,12 +17,12 @@ namespace snoo_android
         {
             // app.Repl();
 
-            String firstName = "Nitin";
-            String lastName = "Jindal";
-            String emailId = "nitinjindal6@gmail.com";
-            String password = "Nitin123";
-            String passwordConfirmation = "Nitin123";
-            String babyName = "John";
+            String firstName = ConfigurationManager.AppSettings.Get("firstName");
+            String lastName  = ConfigurationManager.AppSettings.Get("lastName"); ;
+            String emailId   = ConfigurationManager.AppSettings.Get("emailId"); ;
+            String password  = ConfigurationManager.AppSettings.Get("password"); ;
+            String passwordConfirmation = ConfigurationManager.AppSettings.Get("passwordConfirmation"); ;
+            String babyName  = ConfigurationManager.AppSettings.Get("babyName"); ;
 
             //Performing signUp process
             sign_up(firstName, lastName, emailId, password, passwordConfirmation);
@@ -48,7 +48,7 @@ namespace snoo_android
         private void my_baby_page(string babyName)
         {
             app.Tap("activity_my_baby_name");
-            app.EnterText("John");
+            app.EnterText(babyName);
             app.Tap("activity_my_baby_date_of_birth_til");
             app.Tap("next");
             app.TapCoordinates(760, 1104);

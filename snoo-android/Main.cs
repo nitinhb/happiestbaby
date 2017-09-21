@@ -5,13 +5,14 @@ using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 using Xamarin.UITest.Android;
+using System.Configuration;
 
 namespace snoo_android
 {
     [TestFixture]
     public class Main
     {
-        public AndroidApp app;
+        public static AndroidApp app;
 
         [SetUp]
         public void BeforeEachTest()
