@@ -49,4 +49,4 @@ NOTE: All the configurable fields like email id, password are present in app.con
 
 4.Search for vysor and install it as chrome extension.
 
-5.Open visor from chrome and search for connected device and select view device.
+5.Open vysor from chrome and search for connected device and select view device.
