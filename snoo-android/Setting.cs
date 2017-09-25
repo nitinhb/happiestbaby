@@ -17,6 +17,8 @@ namespace snoo_android
             //app.Repl();
 
             //setting => my baby 
+            //my baby photo change
+
             setting_change_name_test();
             //Check name is changed
             Assert.IsTrue(app.Query("activity_my_baby_name").ElementAt(0).Text.Equals("Test baby"));
@@ -32,6 +34,14 @@ namespace snoo_android
             System.Threading.Thread.Sleep(5000);
             app.Tap("activity_my_baby_gender_girl");
             app.Screenshot("activity_my_baby_date_of_birth_til");
+
+            //checking preemie and weaning switch working
+            app.Screenshot("activity_my_baby_is_preemie");
+            app.Tap("activity_my_baby_is_preemie");
+            app.Tap("activity_my_baby_is_weaning");
+            app.Screenshot("activity_my_baby_is_preemie");
+
+            change_photo_test();
 
             //Testing setting my profile
             String firstName = ConfigurationManager.AppSettings.Get("firstName"); ;
@@ -50,15 +60,21 @@ namespace snoo_android
             Assert.IsTrue(app.Query("activity_my_profile_last_name_text").ElementAt(0).Text.Equals(lastName));
 
             //Testing about page
-            about_test();
+            //about_test();
 
             //Logout test
             Logout.logout_test();
 
         }
 
-     
-         private void setting_my_profile_name_change(String firstName, String lastName)
+        private void change_photo_test()
+        {
+            app.Tap("activity_my_baby_photo");
+            app.Screenshot("action_bar_root");
+            app.Back();
+        }
+
+        private void setting_my_profile_name_change(String firstName, String lastName)
         {
             System.Threading.Thread.Sleep(5000);
             app.TapCoordinates(108, 150); //press back button
@@ -114,14 +130,46 @@ namespace snoo_android
             System.Threading.Thread.Sleep(5000);
         }
 
-        public void about_test()
+        [Test]
+        public void about_terms_condition_test()
         {
+            String emailId = ConfigurationManager.AppSettings.Get("loginId"); ;
+            String password = ConfigurationManager.AppSettings.Get("loginPassword"); ;
+
+            //Logging in
+            Login.login(emailId, password);
             System.Threading.Thread.Sleep(5000);
-            app.TapCoordinates(108, 150); //press back button
-            System.Threading.Thread.Sleep(5000);
+            app.WaitForElement("dashboard_button_play", "app taking too long", new TimeSpan(0, 0, 2, 0));
             app.TapCoordinates(91, 143); //open menu drawer
             System.Threading.Thread.Sleep(5000);
             app.TapCoordinates(300, 840); //about 
+            app.WaitForElement("btn_link_legacy", "app taking too long", new TimeSpan(0, 0, 2, 0));
+            app.Screenshot("action_bar_root");
+            System.Threading.Thread.Sleep(5000);
+            app.Tap("btn_link_legacy"); 
+            System.Threading.Thread.Sleep(5000);
+            app.Screenshot("action_bar_root");
+        }
+
+        [Test]
+        public void about_cnt_customer_care_test()
+        {
+            String emailId = ConfigurationManager.AppSettings.Get("loginId"); ;
+            String password = ConfigurationManager.AppSettings.Get("loginPassword"); ;
+
+            //Logging in
+            Login.login(emailId, password);
+            System.Threading.Thread.Sleep(5000);
+            app.WaitForElement("dashboard_button_play", "app taking too long", new TimeSpan(0, 0, 2, 0));
+            app.TapCoordinates(91, 143); //open menu drawer
+            System.Threading.Thread.Sleep(5000);
+            app.TapCoordinates(300, 840); //about 
+            app.WaitForElement("btn_link_legacy", "app taking too long", new TimeSpan(0, 0, 2, 0));
+            app.Screenshot("action_bar_root");
+            System.Threading.Thread.Sleep(5000);
+            app.Tap("btn_link_contact");
+            System.Threading.Thread.Sleep(5000);
+            app.Screenshot("action_bar_root");
         }
 
     }

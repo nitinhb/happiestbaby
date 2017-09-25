@@ -1,1 +1,10 @@
 c:\users\anjali\documents\visual studio 2017\Projects\snoo-android\snoo-android\bin\Debug\Xamarin.UITest.dll
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Debug\snoo-android.dll.config
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Debug\snoo-android.dll
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Debug\snoo-android.pdb
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Debug\nunit.framework.dll
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Debug\nunit.framework.xml
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\bin\Debug\Xamarin.UITest.xml
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\obj\Debug\snoo-android.csprojResolveAssemblyReference.cache
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\obj\Debug\snoo-android.dll
+C:\Users\Anjali\Documents\Visual Studio 2017\Projects\snoo-android\snoo-android\obj\Debug\snoo-android.pdb

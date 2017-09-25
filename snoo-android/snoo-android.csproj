@@ -49,12 +49,14 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="Xamarin.UITest, Version=2.0.0.1555, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.UITest.2.0.0.1555-dev\lib\Xamarin.UITest.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutSnoo.cs" />
+    <Compile Include="ForgotPassword.cs" />
     <Compile Include="HomePage.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Logout.cs" />

@@ -25,6 +25,7 @@ namespace snoo_android
                // .PreferIdeSettings()
                 // TODO: Update this path to point to your Android app and uncomment the
                 // code if the app is not included in the solution.
+                .EnableLocalScreenshots()
                 .ApkFile ("com.happiestbaby.snoo-Signed.apk")
                 .StartApp();
         }

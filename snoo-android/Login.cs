@@ -20,27 +20,7 @@ namespace snoo_android
             String password = ConfigurationManager.AppSettings.Get("loginPassword");
             login(emailId, password);
         }
-
-        [Test]
-        public void startSnoo_test()
-        {
-            String emailId = ConfigurationManager.AppSettings.Get("loginId");
-            String password = ConfigurationManager.AppSettings.Get("loginPassword");
-            login(emailId, password);
-            app.WaitForElement("dashboard_button_play", "Upload is taking too long", new TimeSpan(0, 0, 1, 0));
-            app.TapCoordinates(91, 143); //open menu drawer
-            app.Tap("design_menu_item_text"); //click start snoo
-            System.Threading.Thread.Sleep(10000);
-            app.Tap("dashboard_button_play");
-            System.Threading.Thread.Sleep(10000);
-            app.Tap("btn_dashboard_up");
-            System.Threading.Thread.Sleep(10000);
-            app.Tap("btn_dashboard_down");
-            System.Threading.Thread.Sleep(5000);
-            app.Tap("btn_dashboard_pause_text");
-        }
-      
-
+        
         public static void login(String emailId,String password)
         {
             app.WaitForElement("btn_login", "Taking too long to open", new TimeSpan(0, 0, 2, 0));
